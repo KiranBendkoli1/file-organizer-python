@@ -5,9 +5,10 @@ audio = ["mp3","wav"]
 video = ["mp4","mkv", "flv", "mpeg"]
 docs  = ["pdf", "txt","ref","doc"]
 
-#Path = input("Enter Path of Folder: ")
+Path = input("Enter Path of Folder: ")
 
-files = os.listdir("./")
+files = os.listdir(Path)
+os.chdir(Path)
 print(files)
 folders = ["images","audios","videos","docs","others"]
 
